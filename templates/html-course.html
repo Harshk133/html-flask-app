@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<!-- main -->
+<main class="main">
+    <div class="container">
+        <div class="video-holder">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OIwxZKWzxKg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="list" style="overflow-y: scroll;
+        height: 314px;
+        width: 50%;">
+            <ol type="1">
+                <li class="playerActive"><a href="">Learn HTML in Marathi || html courses #1 #html</a></li>
+                <li><a href="">Learn HTML BASIC TAGS || HTML in Marathi || html courses #2 #html</a></li>
+                <li><a href="">Learn HTML Elements || HTML in Marathi || html courses #3 #html</a></li>
+                <li><a href="">HTML Attributes || Learn HTML in Marathi || html course #4 #html</a></li>
+                <li><a href="">Learn HTML FORMATING TAGS || HTML in Marathi || html courses #5 #html</a></li>
+                <li><a href="">Learn HTML PHRASE TAGSTAGS || HTML in Marathi || html courses #6 #html</a></li>
+                <li><a href="">HTML META TAGS ||HTML in Marathi || html course #7 #html</a></li>
+                <li><a href="">HTML META DATA N MORE....</a></li>
+                <li><a href="">HTML META DATA N MORE....</a></li>
+                <li><a href="">META DATA IN HTML AND MORE...||Html in marathi|| html course #8 #html</a></li>
+                <li><a href="">Learn HTML Meta Data and More || HTML in Marathi || html courses #9 #html</a></li>
+                <li><a href="">Conditional Comment in HTML AND MORE...||Html in marathi|| html course #12 #html</a></li>
+                <li><a href="">META DATA IN HTML AND MORE...||Html in marathi|| html course #10 #html</a></li>
+                <li><a href="">Comments in HTML AND MORE...||Html in marathi|| html course #10 #html</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="description">
+       <section class="overview">
+        <h2>Overview</h2>
+        <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed
+         in a web browser. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting
+         languages such as JavaScript.
+ 
+         Web browsers receive HTML documents from a web server or from local storage and render the documents into
+         multimedia web pages. HTML describes the structure of a web page semantically and originally included cues
+         for its appearance.</p>
+       </section>
+       <br>
+       <section>
+        <h2>Message</h2>
+        <div class="msg-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/default_user.png') }}" alt="Defualt User Logo">
+            </div>
+            <div class="msg">
+                <div class="title">
+                    <h2>How can I do this?</h2>
+                </div>
+                <p>This is some kind of message to you harsh bhiaya The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally</p>
+            </div>
+        </div>
+       </section>
+    </div>
+
+    <div class="btn-plate">
+        <a href="#"><button>&larr;Previous</button></a>
+        <a href="#"><button>Next &rarr;</button></a>
+    </div>
+</main>
+</body>
+
+</html>
+{% endblock %}

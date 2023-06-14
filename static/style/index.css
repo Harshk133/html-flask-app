@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600;700&family=Poppins:ital,wght@0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600;700&family=Kablammo&family=Poppins:ital,wght@0,400;1,200&display=swap');
+/*
+font-family: 'Inconsolata', monospace;
+font-family: 'Kablammo', cursive;
+font-family: 'Poppins', sans-serif;
+*/
+
+:root {
+    --background-color: orange;
+    --color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    margin: auto;
+    width: 100%;
+    max-width: 90%;
+    background-color: var(--background-color);
+    color: var(--color);
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    padding: 7px;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    /* background-color: rgb(156, 220, 245); */
+    background-color: white;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    margin: 12px;
+    cursor: pointer;
+}
+
+.active {
+    list-style: none;
+    padding: 7px;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.playerActive {
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+.main {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+}
+
+.bannerImg {
+    width: 100%;
+    height: 300px;
+    filter: blur(2px);
+}
+
+.over-text .font {
+    /* font-family: 'Inconsolata', monospace; */
+    font-family: 'Kablammo', cursive;
+    background-color: black;
+    border-radius: 50px;
+    margin: 40px;
+}
+
+.over-text {
+    margin: 17px;
+    position: relative;
+    top: -270px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.over-text button {
+    cursor: pointer;
+    font-size: 13px;
+    padding: 10px;
+    animation: jumping-animation 2s forwards infinite;
+}
+
+@keyframes jumping-animation {
+    0% {
+        scale: 0.1;
+    }
+
+    50%,
+    100% {
+        scale: 1.1;
+    }
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.description {
+    padding: 20px;
+}
+
+.msg-container {
+    display: flex;
+}
+
+.msg-container .logo img {
+    width: 60px;
+}
+
+.msg p, .title {
+    margin-left: 17px;
+}
+
+.form-container {
+    display: flexbox;
+}
+
+form {
+    margin: auto;
+    width: 70%;
+}
+
+form div input, textarea{
+    width: 80%;
+}
+
+footer {
+    margin: auto;
+    width: 100%;
+    height: 28px;
+    max-width: 90%;
+    background-color: var(--background-color);
+    color: var(--color);
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Inconsolata', monospace;
+}
